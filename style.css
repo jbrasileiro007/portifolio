@@ -13,7 +13,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;justify-content:space-between;align-items:center;padding:12px 5vw;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--l);background:color-mix(in srgb,var(--bg) 60%,transparent)}
 nav div{display:flex;gap:20px;align-items:center;font-size:.9rem}nav a{color:var(--m);text-decoration:none}nav a:hover{color:var(--fg)}
 .t{background:none;border:1px solid var(--l);color:var(--fg);border-radius:99px;width:34px;height:34px;cursor:pointer}
-section{max-width:1100px;margin:0 auto;padding:80px 5vw}
+section{
+    width:100%;
+    max-width:1500px;
+    margin:0 auto;
+    padding:90px 6vw;
+}
 .hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center}
 .tag{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--l);background:var(--c);padding:6px 14px;border-radius:99px;font-size:.78rem;width:fit-content}
 .tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok);animation:p 2s infinite}
